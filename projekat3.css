@@ -1,0 +1,509 @@
+*, ::before, :active{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+:root{
+  /* Primary */
+  --pink: hsl(322, 100%, 66%);
+  /* Neutral */
+  --very-pale-cyan: hsl(193, 100%, 96%);
+  --very-dark-cyan: hsl(192, 100%, 9%);
+  --grayish-blue: hsl(208, 11%, 55%);
+
+}
+/* Za naslove */
+@font-face {
+  font-family: Poppins-Font;
+  src: url(Poppins-Bold.ttf);
+  
+}
+@font-face {
+  font-family: Open-sans-bold;
+  src: url(OpenSans-bold.ttf);
+}
+
+/* Za body */
+@font-face {
+  font-family: Open-sans-regular;
+  src: url(OpenSans-Regular.ttf);
+}
+body{
+  font-size: 18px;
+ 
+}
+
+
+
+p{
+  font-family: Open-sans-regular;
+}
+
+header{
+  padding-top: 50px;
+  background-image: url('bg-hero-mobile.svg');
+    background-size: contain; /* Adjust to fit your design needs */
+    background-repeat: no-repeat;
+    padding-bottom: 40px;
+    background-color: var(--very-pale-cyan)
+}
+
+/* .first-img{
+  
+} */
+
+.logo-but{
+  display: flex;
+  gap: 100px;
+  margin-bottom: 130px;
+  margin-left: 15px;
+  
+}
+
+.logo-but button{
+  font-family: Open-sans-bold;
+  width: 130px;
+  border-radius: 20px;
+  height: 40px;
+  align-self: center;
+  background-color: white;
+  border: 1px solid var(--very-pale-cyan)
+}
+
+  .logo-but button:hover{
+    cursor: pointer;
+  }
+
+  .headline-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+.headline-div h2{
+  text-align: center;
+  font-family: Open-sans-bold;
+  margin-bottom: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.headline-div p{
+  font-weight: 550;
+  line-height: 1.4;
+  
+}
+
+.text-container{
+  margin-bottom: 35px;
+}
+
+.indented-1{
+  text-indent: 15px;
+}
+
+.indented-2{
+  text-indent: 10px;
+}
+
+.indented-3{
+  text-indent: 30px;
+}
+
+.indented-4{
+  text-indent: 80px;
+}
+
+
+
+.headline-div button{
+   width: 270px;
+   height: 45px;
+   font-family: Open-sans-bold;
+   border-radius: 20px; 
+   background-color: var(--pink);
+   color: var(--very-pale-cyan);
+   border: 1px solid var(--pink);
+   margin-bottom: 60px;
+}
+
+.headline-div button:hover{
+  cursor: pointer;
+}
+
+/* IDEMOOOOOOOOOOO ovako se skejluje down svg img dakle samo ubacimo unutar img i eto tjt!!!!!! */
+.headline-div img{
+  width: 80%;
+  margin-left: 30px;
+}
+
+
+main{
+ 
+  padding-top: 50px;
+}
+
+
+.grow{
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  -webkit-box-shadow:0px 0px 11px 0px rgba(65,71,69,0.33);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(65,71,69,0.33);
+  box-shadow: 0px 0px 11px 0px rgba(65,71,69,0.33);
+  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+.grow img{
+  width: 70%;
+  margin-bottom: 60px;
+  
+}
+
+.grow h2{
+  margin-bottom: 20px;
+  font-family: Poppins-Font;
+}
+
+.grow p{
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 35px;
+  color: var(--grayish-blue);
+  line-height: 1.5;
+}
+
+.conversation{
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  -webkit-box-shadow:0px 0px 11px 0px rgba(65,71,69,0.33);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(65,71,69,0.33);
+  box-shadow: 0px 0px 11px 0px rgba(65,71,69,0.33);
+  margin-bottom: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+.conversation img{
+  width: 70%;
+  margin-bottom: 70px;
+}
+
+
+.conversation h2{
+  font-family: Poppins-Font;
+  margin-bottom: 20px;
+}
+
+.conversation p{
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: var(--grayish-blue);
+  line-height: 1.5;
+  margin-bottom: 70px;
+}
+
+.users{
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  -webkit-box-shadow:0px 0px 11px 0px rgba(65,71,69,0.33);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(65,71,69,0.33);
+  box-shadow: 0px 0px 11px 0px rgba(65,71,69,0.33);
+  margin-bottom: 110px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.users img{
+  width: 70%;
+  margin-bottom: 70px;
+}
+ .users h2{
+  font-family: Poppins-Font;
+  margin-bottom: 20px;
+ }
+
+ .users p{
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: var(--grayish-blue);
+  line-height: 1.5;
+  margin-bottom: 40px;
+ }
+
+.ready{
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 15px;
+  -webkit-box-shadow:0px 0px 11px 0px rgba(65,71,69,0.33);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(65,71,69,0.33);
+  box-shadow: 0px 0px 11px 0px rgba(65,71,69,0.33);
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+  top: 80px;
+  z-index: 2;
+  background-color: white;
+}
+
+.ready h2{
+  margin-bottom: 30px;
+  font-family: Open-sans-bold;
+  letter-spacing: -1.5px;
+}
+
+.ready button{
+  width: 270px;
+  height: 45px;
+  font-family: Open-sans-bold;
+  border-radius: 20px; 
+  background-color: var(--pink);
+  color: var(--very-pale-cyan);
+  border: 1px solid var(--pink);
+  margin-bottom: 50px;
+}
+
+.ready button:hover{
+  cursor: pointer;
+}
+
+footer{
+  position: relative;
+  background-color: var(--very-dark-cyan);
+  color: var(--very-pale-cyan);
+  padding-top: 150px;
+  padding-left: 15px;
+  padding-bottom: 50px;
+  z-index: 1;
+}
+
+.message{
+  fill: white;
+}
+
+.text{
+  fill: white;
+  
+}
+
+
+footer .first-svg{
+  margin-bottom: 20px;
+ 
+  
+}
+
+footer svg{
+  color: var(--very-pale-cyan);
+ 
+}
+
+footer .inline{
+  display: inline;
+  margin-left: 20px;
+}
+
+
+
+footer .location {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+footer .savior {
+  margin-left: 30px;
+  
+}
+
+footer .phone{
+  margin-bottom: 20px;
+}
+
+footer .mail{
+  margin-bottom: 50px;
+}
+
+footer .about{
+  line-height: 2.2;
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+
+footer .icons{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 30px;
+  
+}
+
+.facebook, .twitter, .instagram{
+  fill: white;
+}
+
+.instagram{
+  border: 1px solid rebeccapurple;
+}
+
+footer .copy{
+  text-align: center;
+  
+}
+/* KOMENTARI */
+/* NAUCIO SAM KAKO SE PRAVI INDENT ZA PARAGRAF SA VISE REDOVA */
+/* KAD RADIS Z-INDEXE NE ZABORAVLJAJ DA STAVIS BACKGROUND COLOR */
+/* MENJANJE BOJE ZA SVG FILE MORA DA SE IDE U NJEGA I DA SE U ODG. PATH UBACI KLASA, ZATIM U CSS-U TOJ KLASI DATI FILL:ZELJENA BOJA , TAKODJE SVG FILE MORA BITI INLINE*/
+
+@media only screen and (min-width: 768px) {
+  .logo-but{
+    gap: 600px
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .logo-but{
+    gap: 1230px
+  }
+  .headline-div{
+    display: flex;
+    flex-direction: row;
+  }
+  .headline-first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headline-first h2{
+    
+    margin-right: 220px;
+    margin-left: 220px;
+  }
+  .grow{
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    margin-left: 120px;
+    margin-right: 120px;
+    height: 500px;
+    
+  }
+  
+  .grow div:nth-child(1){
+    order: 2;
+  }
+  .grow div:nth-child(2){
+    order: 1;
+  }
+  .grow div:nth-child(3){
+    order: 2;
+  }
+  .grow .new-first{
+    
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 300px;
+    margin-left: 50px;
+  }
+  .grow img{
+    width: 90%;
+    
+  }
+  .new-first h2{
+    margin-left: 200px;
+  }
+  .conversation{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    margin-right: 120px;
+    height: 500px;
+  }
+  .conversation img{
+    width: 40%;
+    margin-left: 90px;
+  }
+  .conversation .conv-div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  .conv-div h2{
+    text-align: center;
+  }
+  .users{
+    display: flex;
+    flex-direction: row;
+    margin-left: 120px;
+    margin-right: 120px;
+    height: 500px;
+  }
+  .users img{
+    width: 40%;
+    margin-left: 90px;
+  }
+  .users div:nth-child(1){
+    order: 2;
+  }
+  .users div:nth-child(2){
+    order: 1;
+  }
+  .scnd-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  .users h2{
+    margin-left: 320px;
+  }
+  .ready{
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+  .container-footer{
+    display: flex;
+    gap: 320px;
+    
+    margin-left: 120px;
+    
+  }
+  .first-col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about{
+    align-self: center;
+  }
+  .icons{
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
